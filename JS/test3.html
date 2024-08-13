@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split</title>
+    
+    
+</head>
+<body>
+    <p id="demo1"><p>
+        <p id="demo2"><p></p>
+        <script>
+
+        const str="I AM MR. SENAPATI"
+        const strArr = str.split(" ")
+        // const len =strArr.length;
+        let text ="<ul>";
+        for(let i=0;i<strArr.length;i++){
+            text +="<li>"+strArr[i]+"</li>";
+            
+        }
+        text+="</ul>"
+
+        let a=" "
+        strArr.forEach(element => {
+            a+=element+" ";
+        });
+        document.getElementById("demo1").innerHTML =text;
+        document.getElementById("demo2").innerHTML = a ;
+        
+        </script>
+</body>
+</html>
